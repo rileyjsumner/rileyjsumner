@@ -1,3 +1,3 @@
 # Rileyjsumner.com
 
-Repo for my personal website
+Welcome to my GitHub
