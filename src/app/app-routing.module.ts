@@ -5,14 +5,21 @@ import {SkillsComponent} from "./skills/skills.component";
 import {ProjectsComponent} from "./projects/projects.component";
 import {ContactComponent} from "./contact/contact.component";
 import {HomeComponent} from "./home/home.component";
+import {WritingComponent} from "./writing/writing.component";
+import {GraphicsComponent} from "./graphics/graphics.component";
+import {NotfoundComponent} from "./notfound/notfound.component";
 
 const routes: Routes = [
-  { path: 'Home', component: HomeComponent },
+  { path: '', component: HomeComponent },
+  { path: 'Home', redirectTo: '', pathMatch: 'full' },
   { path: 'Experience', component: ExperienceComponent },
   { path: 'Skills', component: SkillsComponent },
   { path: 'Projects', component: ProjectsComponent },
+  { path: 'Writing', component: WritingComponent },
+  { path: 'Graphics', component: GraphicsComponent },
   { path: 'Contact', component: ContactComponent },
-  { path: '', redirectTo: 'Home', pathMatch: 'full' }
+  { path: '404', component: NotfoundComponent },
+  { path: '**', redirectTo: '/404' },
 ];
 
 @NgModule({

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import navLinks from '../../data/navlinks';
 
 @Component({
   selector: 'app-nav-bar',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
-
-  constructor() { }
+  navLinks: any;
+  constructor() {
+    this.navLinks = navLinks;
+  }
 
   ngOnInit(): void {
   }

@@ -12,6 +12,9 @@ import { ContactComponent } from './contact/contact.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { WritingComponent } from './writing/writing.component';
+import { GraphicsComponent } from './graphics/graphics.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     SkillsComponent,
     ProjectsComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    WritingComponent,
+    GraphicsComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,

@@ -36,10 +36,9 @@ table.rank {
   width: 100%;
 }
 .marker td {
-  height: .3rem;
+  height: 0.1rem;
   text-align: center;
   margin: 0 auto;
   width: 20%;
-  background-color: #795c5f;
 }
 

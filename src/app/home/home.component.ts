@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import achievements from '../../data/achievements';
+import leadership from '../../data/leadership';
 
 @Component({
   selector: 'app-home',
@@ -6,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  achievements: any;
+  leadership: any;
+  constructor() {
+    this.achievements = achievements;
+    this.leadership = leadership;
+  }
 
   ngOnInit(): void {
   }

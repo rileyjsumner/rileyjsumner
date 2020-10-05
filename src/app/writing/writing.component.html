@@ -1,0 +1,21 @@
+<div class="wrapper">
+  <div class="wrapper-content">
+    <h3>Writing Samples</h3>
+    <div class="publications">
+      <h4>Works appearing in:</h4>
+      <ul>
+        <li><a href="https://www.dailycardinal.com/staff/riley-sumner">Daily Cardinal, UW-Madison</a></li>
+        <li><a href="https://belluwmadison.wordpress.com">Bell Magazine, UW-Madison</a></li>
+      </ul>
+    </div>
+    <div class="works-list">
+      <div class="work" *ngFor="let work of writing">
+        <a class="article no-decoration" href="{{work.url}}" target="_blank">
+          <h4>{{work.title}}</h4>
+          <p class="byline">By {{work.byline}}</p>
+          <p>{{work.summary}}</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
