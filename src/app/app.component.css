@@ -1,0 +1,31 @@
+.content {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+}
+.intro {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.intro h1,
+.intro h2 {
+  margin: .75rem 0;
+}
+.profile-image {
+  background-image: url("src/assets/images/riley_sumner.jpg");
+  height: 250px;
+  width: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 5px solid #160F29;
+}
+
+.wrapper {
+  position: relative;
+  top: 10px;
+}

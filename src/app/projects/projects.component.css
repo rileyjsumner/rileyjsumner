@@ -1,0 +1,39 @@
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.project {
+  text-align: left;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.project-title {
+  width: 65%;
+}
+.project-details {
+  width: 30%;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.time {
+  font-style: italic;
+}
+
+.location {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.location img {
+  width: 24px;
+  height: 24px;
+}

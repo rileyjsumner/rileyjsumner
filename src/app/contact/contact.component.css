@@ -1,0 +1,44 @@
+.contact-form {
+  width: 100%;
+}
+
+.contact-form form {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-group {
+  width: 100%;
+  text-align: left;
+}
+
+.form-group label {
+  width: 100%;
+  text-align: left;
+  font-size: 0.75rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid #795c5f;
+  padding: 0.25rem 0;
+  background-color: unset;
+}
+
+.form-group textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: 0;
+}
