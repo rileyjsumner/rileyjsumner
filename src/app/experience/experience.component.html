@@ -4,9 +4,7 @@
       <div class="job-title">
         <h3 class="title">{{exp.title}}</h3>
         <div class="skills">
-          <p class="tag" *ngFor="let skill of exp.lang">
-            {{skill}}
-          </p>
+          <app-tag [tag]="skill" *ngFor="let skill of exp.lang"></app-tag>
         </div>
         <p class="description">{{exp.desc}}</p>
       </div>

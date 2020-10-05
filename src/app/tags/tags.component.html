@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <div class="wrapper-content">
+    <h2>Experiences with {{tag}}</h2>
+    <div class="tag-list">
+      <div class="tag-item" *ngFor="let item of items">
+        <div class="job-title">
+          <h3 class="title">{{item.title}}</h3>
+          <div class="skills">
+            <app-tag [tag]="skill" *ngFor="let skill of item.lang"></app-tag>
+          </div>
+          <p class="description">{{item.desc}}</p>
+        </div>
+        <div class="job-details">
+          <h4 class="company">{{item.company}}</h4>
+          <p class="time">{{item.start}} - {{item.end}}</p>
+          <div class="location">
+            <img src="assets/images/location.svg" alt="location"/>
+            <p>{{item.location}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

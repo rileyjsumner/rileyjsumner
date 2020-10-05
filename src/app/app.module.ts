@@ -15,6 +15,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { WritingComponent } from './writing/writing.component';
 import { GraphicsComponent } from './graphics/graphics.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { TagsComponent } from './tags/tags.component';
+import { TagComponent } from './tag/tag.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { NotfoundComponent } from './notfound/notfound.component';
     FooterComponent,
     WritingComponent,
     GraphicsComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    TagsComponent,
+    TagComponent
   ],
   imports: [
     BrowserModule,

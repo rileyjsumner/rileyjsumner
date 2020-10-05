@@ -1,0 +1,39 @@
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.tag-item {
+  text-align: left;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.job-title {
+  width: 65%;
+}
+.job-details {
+  width: 30%;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.time {
+  font-style: italic;
+}
+
+.location {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.location img {
+  width: 24px;
+  height: 24px;
+}

@@ -12,6 +12,16 @@
 
 let projects = [
   {
+    title: 'Personal Website',
+    affiliation: 'Personal Project, UW-Madison',
+    start: 'October 2020',
+    end: 'Present',
+    desc: 'Home for my personal website, developed in AngularJS',
+    lang: ['AngularJS', 'JavaScript', 'HTML', 'CSS'],
+    location: 'Madison, WI',
+    url: ''
+  },
+  {
     title: 'Bell Magazine Website',
     affiliation: 'Bell Magazine, UW-Madison',
     start: 'June 2019',

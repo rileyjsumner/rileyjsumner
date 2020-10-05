@@ -1,7 +1,7 @@
 <div class="wrapper">
   <div class="skills-list">
     <div class="skill" *ngFor="let skill of skills">
-      <p class="tag">{{skill.name}}</p>
+      <app-tag [tag]="skill.name"></app-tag>
       <table class="rank">
         <tr class="marker">
           <td></td>
