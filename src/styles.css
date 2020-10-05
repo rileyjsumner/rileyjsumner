@@ -51,12 +51,21 @@ h4 {
 
 p, li,
 button, span,
-a, div, label,
+div, label,
 input, textarea {
   font-family: 'Merriweather', serif;
   font-size: 1rem;
   color: #160F29;
   margin: 0.25rem 0;
+}
+a {
+  font-size: 1rem;
+  font-family: 'Merriweather', serif;
+  color: #160F29;
+  transition: color .25s ease-in-out;
+}
+a:hover {
+  color: #0a8483;
 }
 
 strong {
