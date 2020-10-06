@@ -24,6 +24,12 @@ let graphics = [
     orientation: 'portrait',
   },
   {
+    title: 'Personal Logo',
+    fileName: 'logo.png',
+    summary: 'Design of my Personal Logo',
+    orientation: 'portrait'
+  },
+  {
     title: 'Johnson\'s Brewery',
     fileName: 'johnsons-brewery.png',
     summary: 'Logo designed for a classroom project',

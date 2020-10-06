@@ -39,6 +39,8 @@
   position: fixed;
   margin: 0;
   top: 0;
+  display: flex;
+  justify-content: space-between;
 }
 .hamburger {
   position: absolute;
@@ -50,6 +52,11 @@
   min-height: .25rem;
   border-radius: .5rem;
   background-color: #effeff;
+}
+
+.logo img {
+  height: 2.25rem;
+  margin-left: .5rem;
 }
 @media(min-width: 600px) {
 
