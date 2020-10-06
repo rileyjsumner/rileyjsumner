@@ -8,28 +8,37 @@ import navLinks from '../../../data/navlinks';
 })
 export class NavBarComponent implements OnInit {
   navLinks: any;
+  public innerWidth: any;
   constructor(private el: ElementRef) {
     this.navLinks = navLinks;
   }
 
   toggleMenu() {
-    let menu = this.el.nativeElement.querySelector(".nav-items");
-    if(!menu.classList.contains('closed')) {
-      menu.classList.add('closed');
-      menu.style.height = "0px";
-    } else {
-      menu.classList.remove('closed');
-      menu.style.height = (this.navLinks.length * 2.5)+"rem";
+    if(this.innerWidth < 600) {
+      let menu = this.el.nativeElement.querySelector(".nav-items");
+      if(!menu.classList.contains('closed')) {
+        menu.classList.add('closed');
+        menu.style.height = "0px";
+      } else {
+        menu.classList.remove('closed');
+        menu.style.height = (this.navLinks.length * 2.5)+"rem";
+      }
     }
+
   }
 
   closeMenu() {
-    let menu = this.el.nativeElement.querySelector(".nav-items");
-    menu.classList.add('closed');
-    menu.style.height = "0px";
+    if(this.innerWidth < 600) {
+      let menu = this.el.nativeElement.querySelector(".nav-items");
+      menu.classList.add('closed');
+      menu.style.height = "0px";
+    }
+
   }
 
-  ngOnInit(): void {
+
+  ngOnInit() {
+    this.innerWidth = window.innerWidth;
   }
 
 }

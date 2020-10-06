@@ -60,10 +60,12 @@
   .nav-items {
     flex-wrap: nowrap;
     width: 90%;
+    height: auto;
+    overflow: initial;
   }
   .item {
     margin: 0 .25rem;
-    background-color: #0a8483;
+    background-color: #160F29;
   }
   .mobile-menu {
     display: none;
