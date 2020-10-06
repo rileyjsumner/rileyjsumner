@@ -34,9 +34,7 @@
 }
 
 @media(min-width: 900px) {
-  .intro {
-    margin-top: 100px;
-  }
+
 }
 
 @media(min-width: 1286px) {

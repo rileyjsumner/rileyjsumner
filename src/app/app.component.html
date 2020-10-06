@@ -1,11 +1,11 @@
 <div class="content">
-  <div class="intro">
+  <app-nav-bar></app-nav-bar>
+  <div (click)="closeMenu()" class="intro">
     <div class="profile-image"></div>
     <h1>Riley J. Sumner</h1>
     <h2>Full-Stack Developer. Storyteller. Designer.</h2>
-    <app-nav-bar></app-nav-bar>
   </div>
-  <main class="main">
+  <main (click)="closeMenu()" class="main">
     <router-outlet></router-outlet>
   </main>
   <app-footer></app-footer>

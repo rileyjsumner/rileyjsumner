@@ -14,7 +14,7 @@ export class NavBarComponent implements OnInit {
   }
 
   toggleMenu() {
-    if(this.innerWidth < 600) {
+    if(this.innerWidth < 900) {
       let menu = this.el.nativeElement.querySelector(".nav-items");
       if(!menu.classList.contains('closed')) {
         menu.classList.add('closed');
@@ -28,12 +28,11 @@ export class NavBarComponent implements OnInit {
   }
 
   closeMenu() {
-    if(this.innerWidth < 600) {
+    if(this.innerWidth < 900) {
       let menu = this.el.nativeElement.querySelector(".nav-items");
       menu.classList.add('closed');
       menu.style.height = "0px";
     }
-
   }
 
 
