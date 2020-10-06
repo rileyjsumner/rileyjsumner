@@ -17,7 +17,8 @@ let experience = [
     start: 'September 2020',
     end: 'Present',
     desc: 'Implemented site functionality to communication platform viewed by >30,000 users.',
-    lang: ['ReactJS', 'MongoDB', 'HTML', 'CSS']
+    lang: ['ReactJS', 'MongoDB', 'HTML', 'CSS'],
+    url: 'https://udisc.com/'
   },
   {
     title: 'Front-end Web Developer',
@@ -26,7 +27,8 @@ let experience = [
     start: 'September 2018',
     end: 'Present',
     desc: 'Successfully drove the development of online platforms used by staff, jobseekers and students to aid day-to-day operations.',
-    lang: ['PHP', 'JavaScript', 'VueJS', 'HTML', 'SCSS', 'jQuery', 'WordPress']
+    lang: ['PHP', 'JavaScript', 'VueJS', 'HTML', 'SCSS', 'jQuery', 'WordPress'],
+    url: 'https://hr.wisc.edu'
   },
   {
     title: 'Opinion Desk Editor',
@@ -35,7 +37,8 @@ let experience = [
     start: 'May 2020',
     end: 'Present',
     desc: 'Wrote and edited opinion pieces to be published in UW Madison’s campus-wide newspaper.',
-    lang: ['Adobe InDesign', 'Adobe Photoshop', 'Adobe Illustrator']
+    lang: ['Adobe InDesign', 'Adobe Photoshop', 'Adobe Illustrator'],
+    url: 'https://dailycardinal.com'
   },
   {
     title: 'Editor',
@@ -44,7 +47,8 @@ let experience = [
     start: 'September 2019',
     end: 'Present',
     desc: 'Wrote and edited articles published for Bell Magazine, a campus-based magazine.',
-    lang: ['Adobe Photoshop', 'Adobe Illustrator']
+    lang: ['Adobe Photoshop', 'Adobe Illustrator'],
+    url: 'https://belluwmadison.wordpress.com'
   },
   {
     title: 'Web Developer Intern',
@@ -53,7 +57,8 @@ let experience = [
     start: 'March 2018',
     end: 'August 2018',
     desc: 'Developed eCommerce marketplace for Bare Home and affiliated brands to sell product line.',
-    lang: ['HTML', 'CSS', 'JavaScript', 'HandlebarsJS']
+    lang: ['HTML', 'CSS', 'JavaScript', 'HandlebarsJS'],
+    url: 'https://barehome.com'
   }
 ];
 

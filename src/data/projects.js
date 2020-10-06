@@ -19,7 +19,7 @@ let projects = [
     desc: 'Home for my personal website, developed in AngularJS',
     lang: ['AngularJS', 'JavaScript', 'HTML', 'CSS'],
     location: 'Madison, WI',
-    url: ''
+    url: 'https://github.com/rileyjsumner/rileyjsumner'
   },
   {
     title: 'Bell Magazine Website',
@@ -29,7 +29,7 @@ let projects = [
     desc: 'Created the new web home for Bell Magazine which takes story data entered from a CRUD admin panel and displays to users.',
     lang: ['VueJS', 'JavaScript', 'MongoDB', 'HTML', 'CSS'],
     location: 'Madison, WI',
-    url: '',
+    url: 'https://github.com/rileyjsumner/Bell-Magazine',
   },
   {
     title: 'Programming Tutorial',

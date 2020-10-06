@@ -1,5 +1,5 @@
 <div class="card-title">
-  <h3 class="title">{{exp.title}}</h3>
+  <a class="no-decoration" rel="noopener" target="_blank" href="{{exp.url}}"><h3 class="title">{{exp.title}}</h3></a>
   <div class="skills">
     <app-tag [tag]="skill" *ngFor="let skill of exp.lang"></app-tag>
   </div>
