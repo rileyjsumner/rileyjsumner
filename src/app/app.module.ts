@@ -17,6 +17,7 @@ import { GraphicsComponent } from './graphics/graphics.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { TagsComponent } from './tags/tags.component';
 import { TagComponent } from './tag/tag.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { TagComponent } from './tag/tag.component';
     GraphicsComponent,
     NotfoundComponent,
     TagsComponent,
-    TagComponent
+    TagComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
