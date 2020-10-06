@@ -1,0 +1,43 @@
+.card-title {
+  width: 100%;
+}
+.card-details {
+  width: 100%;
+  border-bottom: 2px solid #160F29;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+.time {
+  font-style: italic;
+}
+
+.location {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.location img {
+  width: 24px;
+  height: 24px;
+}
+
+@media(min-width: 600px) {
+
+}
+
+@media(min-width: 900px) {
+  .card-title {
+    width: 65%;
+  }
+  .card-details {
+    width: 30%;
+    border-bottom: 0;
+  }
+}
+
+@media(min-width: 1286px) {
+
+}

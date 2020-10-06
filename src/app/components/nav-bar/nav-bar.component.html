@@ -1,0 +1,7 @@
+<nav class="nav">
+  <ul class="nav-items">
+    <li *ngFor="let link of navLinks" class="item shadow">
+      <a routerLink="/{{link}}">{{link}}</a>
+    </li>
+  </ul>
+</nav>

@@ -100,7 +100,7 @@ let writing = [
   {
     title: 'Electability doesn’t make sense',
     byline: 'Riley Sumner',
-    summary: '',
+    summary: 'It is just over three months until the Iowa Caucus, and the Democratic Party is down to 19 candidates. However, the race seems to be centered around five candidates — based on the latest poll conducted by CNN of likely Iowa Caucus goers, frontrunners include Warren, Biden, Sanders, Buttigieg and Harris, with all other candidates polling at 3% or less.',
     url: 'https://belluwmadison.wordpress.com/2019/10/17/electability-doesnt-make-sense/',
     thumbnail: ''
   },

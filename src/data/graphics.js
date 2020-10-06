@@ -12,16 +12,28 @@ let graphics = [
     orientation: 'portrait'
   },
   {
-    title: 'Bee Good Logo',
-    fileName: 'bee-good.png',
-    summary: 'Logo designed for a company used for a class project.',
+    title: 'Electability',
+    fileName: 'vote-for-her.png',
+    summary: 'Graphic made for a story about \"Electability\"',
     orientation: 'portrait'
   },
   {
     title: 'Ballot Box',
     fileName: 'ballot-box.png',
     summary: 'Main graphic made for a story about US Elections',
-    orientation: 'landscape',
+    orientation: 'portrait',
+  },
+  {
+    title: 'Johnson\'s Brewery',
+    fileName: 'johnsons-brewery.png',
+    summary: 'Logo designed for a classroom project',
+    orientation: 'portrait'
+  },
+  {
+    title: 'Bee Good Logo',
+    fileName: 'bee-good.png',
+    summary: 'Logo designed for a company used for a class project.',
+    orientation: 'portrait'
   },
   {
     title: 'Electoral Vote Map',
@@ -34,18 +46,6 @@ let graphics = [
     fileName: 'IRV.png',
     summary: 'Infographic depicting the ranked-choice voting process',
     orientation: 'landscape'
-  },
-  {
-    title: 'Electability',
-    fileName: 'vote-for-her.png',
-    summary: 'Graphic made for a story about \"Electability\"',
-    orientation: 'portrait'
-  },
-  {
-    title: 'Johnson\'s Brewery',
-    fileName: 'johnsons-brewery.png',
-    summary: 'Logo designed for a classroom project',
-    orientation: 'portrait'
   }
 ];
 

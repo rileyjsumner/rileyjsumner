@@ -1,0 +1,15 @@
+<div class="card-title">
+  <h3 class="title">{{exp.title}}</h3>
+  <div class="skills">
+    <app-tag [tag]="skill" *ngFor="let skill of exp.lang"></app-tag>
+  </div>
+  <p class="description">{{exp.desc}}</p>
+</div>
+<div class="card-details">
+  <h4 class="affiliation">{{exp.affiliation}}</h4>
+  <p class="time">{{exp.start}} - {{exp.end}}</p>
+  <div class="location">
+    <img src="../../../assets/images/location.svg" alt="location"/>
+    <p>{{exp.location}}</p>
+  </div>
+</div>

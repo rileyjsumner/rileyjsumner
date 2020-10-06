@@ -1,0 +1,66 @@
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.skill {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #160F29;
+  margin: 0;
+}
+
+.skill p {
+  width: 50%;
+}
+
+table.rank {
+  width: 50%;
+  margin-top: .25rem;
+}
+
+.rank .level {
+  width: 100%;
+}
+
+.level td {
+  background-color: #04395e;
+  height: .8rem;
+  border-radius: 0.25rem .5rem .5rem 0.25rem;
+  border-right: 1px solid #effeff;
+}
+
+.rank .marker {
+  width: 100%;
+}
+.marker td {
+  height: 0.1rem;
+  text-align: center;
+  margin: 0 auto;
+  width: 20%;
+}
+
+@media(min-width: 600px) {
+  .skill {
+    width: 45%;
+  }
+  .skill p {
+    width: 50%;
+  }
+  table.rank {
+    width: 45%;
+    margin-top: .25rem;
+  }
+}
+
+@media(min-width: 900px) {
+
+}
+
+@media(min-width: 1286px) {
+
+}

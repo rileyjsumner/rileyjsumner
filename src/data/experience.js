@@ -1,7 +1,7 @@
 /*
   {
     title: [title],
-    company: [company],
+    affiliation: [affiliation],
     location: [city, state],
     start: [Month, yyyy],
     end: [Month, yyyy],
@@ -12,7 +12,7 @@
 let experience = [
   {
     title: 'Full Stack Web Developer',
-    company: 'UDisc',
+    affiliation: 'UDisc',
     location: 'Remote',
     start: 'September 2020',
     end: 'Present',
@@ -21,7 +21,7 @@ let experience = [
   },
   {
     title: 'Front-end Web Developer',
-    company: 'UW-Madison Office of Human Resources',
+    affiliation: 'UW-Madison Office of Human Resources',
     location: 'Madison, WI',
     start: 'September 2018',
     end: 'Present',
@@ -30,7 +30,7 @@ let experience = [
   },
   {
     title: 'Opinion Desk Editor',
-    company: 'UW-Madison Daily Cardinal',
+    affiliation: 'UW-Madison Daily Cardinal',
     location: 'Madison, WI',
     start: 'May 2020',
     end: 'Present',
@@ -39,7 +39,7 @@ let experience = [
   },
   {
     title: 'Editor',
-    company: 'Bell Magazine',
+    affiliation: 'Bell Magazine',
     location: 'Madison, WI',
     start: 'September 2019',
     end: 'Present',
@@ -48,7 +48,7 @@ let experience = [
   },
   {
     title: 'Web Developer Intern',
-    company: 'Bare Home',
+    affiliation: 'Bare Home',
     location: 'Blaine, MN',
     start: 'March 2018',
     end: 'August 2018',

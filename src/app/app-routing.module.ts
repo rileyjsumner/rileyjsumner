@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {ExperienceComponent} from "./experience/experience.component";
-import {SkillsComponent} from "./skills/skills.component";
-import {ProjectsComponent} from "./projects/projects.component";
-import {ContactComponent} from "./contact/contact.component";
-import {HomeComponent} from "./home/home.component";
-import {WritingComponent} from "./writing/writing.component";
-import {GraphicsComponent} from "./graphics/graphics.component";
-import {NotfoundComponent} from "./notfound/notfound.component";
-import {TagsComponent} from "./tags/tags.component";
+import {ExperienceComponent} from "./views/experience/experience.component";
+import {SkillsComponent} from "./views/skills/skills.component";
+import {ProjectsComponent} from "./views/projects/projects.component";
+import {ContactComponent} from "./views/contact/contact.component";
+import {HomeComponent} from "./views/home/home.component";
+import {WritingComponent} from "./views/writing/writing.component";
+import {GraphicsComponent} from "./views/graphics/graphics.component";
+import {NotfoundComponent} from "./views/notfound/notfound.component";
+import {TagsComponent} from "./views/tags/tags.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },

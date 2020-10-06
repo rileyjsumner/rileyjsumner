@@ -1,0 +1,46 @@
+.footer {
+  width: 100%;
+  background-color: #160F29;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+
+}
+
+.footer-item {
+  text-align: center;
+  width: 100%;
+}
+
+.footer-item a {
+  width: 100%;
+}
+
+.footer-item a fa-icon {
+  font-size: 2rem;
+  color: #effeff;
+  transition: color .25s ease-in-out;
+}
+
+.footer-item a fa-icon:hover {
+  color: #0a8483;
+}
+
+@media(min-width: 600px) {
+  .footer-item a fa-icon {
+    font-size: 4rem;
+  }
+}
+
+@media(min-width: 900px) {
+
+}
+
+@media(min-width: 1286px) {
+
+}

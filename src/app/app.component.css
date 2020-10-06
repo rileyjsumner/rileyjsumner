@@ -6,7 +6,7 @@
 }
 .intro {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 .intro h1,
@@ -28,4 +28,17 @@
 .wrapper {
   position: relative;
   top: 10px;
+}
+@media(min-width: 600px) {
+
+}
+
+@media(min-width: 900px) {
+  .intro {
+    margin-top: 100px;
+  }
+}
+
+@media(min-width: 1286px) {
+
 }
