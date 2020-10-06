@@ -1,6 +1,13 @@
 <nav class="nav">
-  <ul class="nav-items">
-    <li *ngFor="let link of navLinks" class="item shadow">
+  <div class="mobile-menu">
+    <div class="hamburger" (click)="toggleMenu();">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <ul class="nav-items closed">
+    <li (click)="closeMenu()" *ngFor="let link of navLinks" class="item shadow">
       <a routerLink="/{{link}}">{{link}}</a>
     </li>
   </ul>

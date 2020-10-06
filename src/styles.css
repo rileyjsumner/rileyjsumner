@@ -110,17 +110,16 @@ button:hover {
   width: 100%;
 }
 
-.shadow {
-  box-shadow: 4px 4px 0 0 #0a8483;
-  transition: box-shadow .25s ease-in-out,
-              transform .25s ease-in-out;
-}
-.shadow:hover {
-  transform: translate(-4px, -4px);
-  box-shadow: 8px 8px 0 0 #0a8483;
-}
 @media(min-width: 600px) {
-
+  .shadow {
+    box-shadow: 4px 4px 0 0 #0a8483;
+    transition: box-shadow .25s ease-in-out,
+    transform .25s ease-in-out;
+  }
+  .shadow:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 8px 8px 0 0 #0a8483;
+  }
 }
 
 @media(min-width: 900px) {
