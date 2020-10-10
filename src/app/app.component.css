@@ -3,6 +3,7 @@
   margin: 0 auto;
   text-align: center;
   height: 100vh;
+  z-index: 0;
 }
 .intro {
   width: 100%;
