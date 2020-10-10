@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "dev": "lite-server",
-    "deploy": "ng build --prod --output-path docs --base-href http://rileysumner.com && git add . && git commit -am \"deploy\" && git push"
+    "deploy": "ng build --prod --output-path docs --base-href https://rileysumner.com && git add . && git commit -am \"deploy\" && git push"
   },
   "private": true,
   "dependencies": {
