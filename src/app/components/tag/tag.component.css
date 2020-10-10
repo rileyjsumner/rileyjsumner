@@ -6,7 +6,7 @@
   margin: .25rem .25rem .25rem 0;
   transition: background-color .25s ease-in-out;
   font-size: .8rem;
-  display: block;
+  display: inline-block;
   text-decoration: none;
 }
 .tag:hover {

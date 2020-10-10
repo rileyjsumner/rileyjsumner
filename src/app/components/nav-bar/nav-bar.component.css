@@ -81,6 +81,9 @@
   .mobile-menu {
     display: none;
   }
+  .wrapper {
+    width: 85%;
+  }
 }
 
 @media(min-width: 1286px) {

@@ -1,19 +1,21 @@
-<div class="wrapper">
-  <div class="skills-list">
-    <div class="skill" *ngFor="let skill of skills">
-      <app-tag [tag]="skill.name"></app-tag>
-      <table class="rank">
-        <tr class="marker">
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr class="level">
-          <td [attr.colspan]="skill.level"></td>
-        </tr>
-      </table>
+<div class="wrapper animate__animated animate__backInUp">
+  <div class="wrapper-content">
+    <div class="skills-list">
+      <div class="skill" *ngFor="let skill of skills">
+        <app-tag [tag]="skill.name"></app-tag>
+        <table class="rank">
+          <tr class="marker">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="level">
+            <td [attr.colspan]="skill.level"></td>
+          </tr>
+        </table>
+      </div>
     </div>
   </div>
 </div>

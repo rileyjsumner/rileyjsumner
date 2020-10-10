@@ -10,7 +10,7 @@
     </div>
   </div>
   <ul class="nav-items closed">
-    <li (click)="closeMenu()" *ngFor="let link of navLinks" class="item shadow">
+    <li (click)="closeMenu()" *ngFor="let link of navLinks" class="item shadow animate__animated animate__backInDown">
       <a routerLink="/{{link}}">{{link}}</a>
     </li>
   </ul>
