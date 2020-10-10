@@ -8,7 +8,6 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { ExperienceComponent } from './views/experience/experience.component';
 import { SkillsComponent } from './views/skills/skills.component';
 import { ProjectsComponent } from './views/projects/projects.component';
-import { ContactComponent } from './views/contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { FooterComponent } from './components/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -19,6 +18,8 @@ import { TagsComponent } from './views/tags/tags.component';
 import { TagComponent } from './components/tag/tag.component';
 import { CardComponent } from './components/card/card.component';
 import {CommonModule} from "@angular/common";
+import {HttpClientModule} from "@angular/common/http";
+import { CardViewComponent } from './card-view/card-view.component';
 
 @NgModule({
   declarations: [
@@ -28,14 +29,14 @@ import {CommonModule} from "@angular/common";
     ExperienceComponent,
     SkillsComponent,
     ProjectsComponent,
-    ContactComponent,
     FooterComponent,
     WritingComponent,
     GraphicsComponent,
     NotfoundComponent,
     TagsComponent,
     TagComponent,
-    CardComponent
+    CardComponent,
+    CardViewComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +44,8 @@ import {CommonModule} from "@angular/common";
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
