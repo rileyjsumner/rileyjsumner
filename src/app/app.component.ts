@@ -20,7 +20,6 @@ export class AppComponent implements OnInit{
       menu.style.height = "0px";
     }
   }
-
   ngOnInit() {
     this.innerWidth = window.innerWidth;
   }

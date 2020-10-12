@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import experience from '../../data/experience';
-import projects from '../../data/projects';
+import experience from '../../../data/experience';
+import projects from '../../../data/projects';
 
 @Component({
   selector: 'app-card-view',
@@ -25,7 +25,6 @@ export class CardViewComponent implements OnInit {
       for(let i = 0; i < this.unFilteredItems.length; i++) {
         if(this.unFilteredItems[i].slug === this.projectSlug) {
           this.project = this.unFilteredItems[i];
-          console.log(this.project);
         }
       }
     });

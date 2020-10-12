@@ -27,6 +27,10 @@
   border: 5px solid #160F29;
 }
 
+main {
+  margin-bottom: 100px;
+}
+
 .wrapper {
   position: relative;
   top: 10px;

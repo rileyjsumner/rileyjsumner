@@ -8,7 +8,7 @@ import {WritingComponent} from "./views/writing/writing.component";
 import {GraphicsComponent} from "./views/graphics/graphics.component";
 import {NotfoundComponent} from "./views/notfound/notfound.component";
 import {TagsComponent} from "./views/tags/tags.component";
-import {CardViewComponent} from "./card-view/card-view.component";
+import {CardViewComponent} from "./components/card-view/card-view.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,7 +26,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

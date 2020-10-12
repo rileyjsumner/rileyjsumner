@@ -48,7 +48,8 @@ let projects = [
     url: 'https://github.com/rileyjsumner/Moo-Moo-Code',
     timestamp: '2017-09-01',
     slug: 'moo-moo-game',
-    type: 'Projects'
+    type: 'Projects',
+    awards: 'Placed 3rd in Web Application Team in 2018 BPA National Competition'
   },
   {
     title: 'Travel Application',
@@ -74,7 +75,8 @@ let projects = [
     url: 'https://github.com/rileyjsumner/Moo-Moo-Math',
     timestamp: '2020-09-01',
     slug: 'moo-moo-math',
-    type: 'Projects'
+    type: 'Projects',
+    awards: 'Placed 2nd in Web Application Team in 2018 BPA National Competition'
   },
   {
     title: 'D&D Character Builder',
@@ -100,7 +102,8 @@ let projects = [
     url: 'https://github.com/rileyjsumner/BPA-DIY-2017',
     timestamp: '2018-12-01',
     slug: 'dogwood-diy',
-    type: 'Projects'
+    type: 'Projects',
+    awards: 'Placed 6th in BPA Web Application Team State Competition'
   },
   {
     title: 'BPA Cares',
@@ -113,7 +116,8 @@ let projects = [
     url: 'https://github.com/rileyjsumner/BPA-WebDes-2018',
     timestamp: '2018-12-01',
     slug: 'bpa-cares',
-    type: 'Projects'
+    type: 'Projects',
+    awards: 'Placed 5th in BPA Web Application Team State Competition'
   }
 ];
 

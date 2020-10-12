@@ -1,6 +1,8 @@
 .footer {
   width: 100%;
   background-color: #160F29;
+  bottom: 0;
+  position: fixed;
 }
 
 .footer-wrapper {

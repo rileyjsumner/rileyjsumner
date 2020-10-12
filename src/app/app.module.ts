@@ -19,7 +19,7 @@ import { TagComponent } from './components/tag/tag.component';
 import { CardComponent } from './components/card/card.component';
 import {CommonModule} from "@angular/common";
 import {HttpClientModule} from "@angular/common/http";
-import { CardViewComponent } from './card-view/card-view.component';
+import { CardViewComponent } from './components/card-view/card-view.component';
 
 @NgModule({
   declarations: [
