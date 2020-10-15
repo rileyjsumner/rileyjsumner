@@ -2,7 +2,7 @@
   width: 100%;
   background-color: #160F29;
   bottom: 0;
-  position: fixed;
+  position: relative;
 }
 
 .footer-wrapper {
@@ -38,7 +38,7 @@
     font-size: 4rem;
   }
   .footer {
-    position: relative;
+    position: fixed;
   }
 }
 
