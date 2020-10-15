@@ -26,18 +26,9 @@
   margin: 0 auto;
   border: 5px solid #160F29;
 }
-
-.wrapper {
-  position: relative;
-  top: 10px;
-  margin-bottom: 0;
-}
 @media(min-width: 600px) {
   .intro {
     width: 95%;
-  }
-  .wrapper {
-    margin-bottom: 100px;
   }
 }
 
