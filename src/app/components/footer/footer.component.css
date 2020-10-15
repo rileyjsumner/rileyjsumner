@@ -37,6 +37,9 @@
   .footer-item a fa-icon {
     font-size: 4rem;
   }
+  .footer {
+    position: relative;
+  }
 }
 
 @media(min-width: 900px) {

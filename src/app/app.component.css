@@ -36,6 +36,9 @@
   .intro {
     width: 95%;
   }
+  .wrapper {
+    margin-bottom: 0;
+  }
 }
 
 @media(min-width: 900px) {
