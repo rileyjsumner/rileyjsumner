@@ -148,6 +148,9 @@ button:hover {
     width: 85%;
     margin: 2rem auto;
   }
+  .wrapper-content {
+    padding-bottom: 125px;
+  }
   .card {
     flex-wrap: nowrap;
   }

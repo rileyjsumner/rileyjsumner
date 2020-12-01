@@ -1,5 +1,12 @@
 let writing = [
   {
+    title: 'Counting votes is not “stealing the election” — it is an election',
+    byline: 'Haley Bills, Riley Sumner and Samantha Telson',
+    summary: 'Though the 2020 presidential election election remains too close to call, Trump has continued to sow division and spread disinformation, as he took to Twitter in a now removed tweet alleging Democrats are trying to “steal the election.”',
+    url: 'https://www.dailycardinal.com/article/2020/11/counting-votes-is-not-stealing-the-election-it-is-an-election',
+    thumbnail: ''
+  },
+  {
     title: 'Elections In Depth: Coronavirus Offers A Re-Evaluation of U.S. Election Policies',
     byline: 'Riley Sumner',
     summary: 'Wisconsin held its primaries on Tuesday following two court decisions blocking Governor Evers’s executive orders to postpone the contest and expand mail-in options. The Wisconsin State Supreme Court ruled that Evers could not postpone the election, and the U.S. Supreme Court ruled all ballots must still be postmarked by the date of the election. ',
@@ -11,6 +18,13 @@ let writing = [
     byline: 'Riley Sumner',
     summary: 'A New York Times report found that President Trump paid $750 in income taxes in 2016 and 2017. For 10 of the previous 15 years, the report also finds he paid no income taxes at all. America works only for the billionaire class and the system needs to be scrapped in order to adequately support all Americans, not just the one percent.',
     url: 'https://www.dailycardinal.com/article/2020/10/its-about-time-billionaires-paid-their-fair-share-to-society',
+    thumbnail: ''
+  },
+  {
+    title: 'What is media bias?',
+    byline: 'Riley Sumner',
+    summary: 'Following Trump’s election in 2016, news organizations analyzed their role in providing unprecedented amounts of press coverage to his campaign and how that may have influenced the election’s outcome. News outlets’ shifts in coverage practices, however, have a critical misunderstanding — political bias is not the problem.',
+    url: 'https://www.dailycardinal.com/article/2020/11/what-is-media-bias',
     thumbnail: ''
   },
   {

@@ -15,7 +15,7 @@ let projects = [
     title: 'Personal Website',
     affiliation: 'Personal Project',
     start: 'October 2020',
-    end: 'Present',
+    end: 'December 2020',
     desc: 'Home for my personal website, developed in AngularJS',
     lang: ['AngularJS', 'JavaScript', 'HTML', 'CSS'],
     location: 'Madison, WI',

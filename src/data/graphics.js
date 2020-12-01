@@ -30,22 +30,34 @@ let graphics = [
     orientation: 'portrait'
   },
   {
+    title: 'Kamala Harris',
+    fileName: 'kamala-harris.png',
+    summary: 'Graphic for a story about Kamala Harris\' election victory',
+    orientation: 'portrait'
+  },
+  {
     title: 'Johnson\'s Brewery',
     fileName: 'johnsons-brewery.png',
     summary: 'Logo designed for a classroom project',
     orientation: 'portrait'
   },
   {
-    title: 'Bee Good Logo',
-    fileName: 'bee-good.png',
-    summary: 'Logo designed for a company used for a class project.',
-    orientation: 'portrait'
+    title: '2020 Election Map',
+    fileName: 'election-map-2020.png',
+    summary: 'Map of the 2020 election results at the time an accompanying story was published',
+    orientation: 'landscape'
   },
   {
     title: 'Electoral Vote Map',
     fileName: 'state-vote-size.png',
     summary: 'Supplementary graphic for US Elections story resizing states based in voter impact toward the Electoral College',
     orientation: 'landscape'
+  },
+  {
+    title: 'Bee Good Logo',
+    fileName: 'bee-good.png',
+    summary: 'Logo designed for a company used for a class project.',
+    orientation: 'portrait'
   },
   {
     title: 'Ranked Choice Voting',

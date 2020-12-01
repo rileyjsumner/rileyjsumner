@@ -92,6 +92,11 @@ let skills = [
     type: 'lang',
   },
   {
+    name: 'TypeScript',
+    level: 4,
+    type: 'lang'
+  },
+  {
     name: 'Git',
     level: 5,
     type: 'tech',
@@ -145,6 +150,11 @@ let skills = [
     name: 'FileZilla',
     level: 5,
     type: 'tech',
+  },
+  {
+    name: 'Cyberduck',
+    level: 5,
+    type: 'tech'
   }
 ];
 
