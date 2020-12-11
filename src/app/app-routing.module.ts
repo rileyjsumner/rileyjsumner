@@ -9,6 +9,7 @@ import {GraphicsComponent} from "./views/graphics/graphics.component";
 import {NotfoundComponent} from "./views/notfound/notfound.component";
 import {TagsComponent} from "./views/tags/tags.component";
 import {CardViewComponent} from "./components/card-view/card-view.component";
+import {CovidVisualizationComponent} from "./components/covid-visualization/covid-visualization.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'Writing', component: WritingComponent },
   { path: 'Graphics', component: GraphicsComponent },
   { path: 'Tags/:tag', component: TagsComponent },
+  { path: 'Interactive/covid-wi-visualization', component: CovidVisualizationComponent },
   { path: '404', component: NotfoundComponent },
   { path: '**', redirectTo: '/404' },
 ];

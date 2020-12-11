@@ -191,3 +191,6 @@ button:hover {
   from, to { border-color: transparent }
   50% { border-color: #160F29; }
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,26 @@
+.wi-county-map {
+  width: 500px;
+  overflow: visible !important;
+}
+circle {
+  fill: #a50027 !important;
+  opacity: .4;
+  stroke: darkred !important;
+}
+path {
+  fill: white !important;
+}
+.content {
+  margin: 0 auto;
+  text-align: center;
+}
+.range-calculator {
+  width: 100%;
+  text-align: center;
+}
+.range-calculator mat-slider {
+  width: 50%;
+}
+.mat-slider-track-wrapper {
+  overflow: visible !important;
+}
