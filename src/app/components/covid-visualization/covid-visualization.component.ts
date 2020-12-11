@@ -79,6 +79,31 @@ export class CovidVisualizationComponent implements OnInit {
     }
     return average;
   }
+  getDeathColor(deaths, pop) {
+    let deathRate = deaths * 100000/pop
+    if(deathRate > 100) {
+      return "#990000";
+    }
+    if(deathRate > 80) {
+      return "#CC0000";
+    }
+    if(deathRate > 60) {
+      return "#FF0000";
+    }
+    if(deathRate > 40) {
+      return "#FF8000";
+    }
+    if(deathRate > 30) {
+      return "#FF9933";
+    }
+    if(deathRate > 20) {
+      return "#FFB266";
+    }
+    if(deathRate > 10) {
+      return "#FFFF99";
+    }
+    return "#FFFFCC"
+  }
 
   updateMap(numDays) {
     let cases = this.showCasesOn(this.dateSelected);
@@ -88,13 +113,16 @@ export class CovidVisualizationComponent implements OnInit {
       let county_cir = document.getElementById(cases[i].county.replace(/ /g,"_")+"_cases");
       if(county_cir != undefined) {
         let county_name = cases[i].county;
+        let deaths = cases[i].deaths;
         let newCases = this.getSevenDayAverage(county_name, numDays);
         newCases = (newCases < 0) ? 0:newCases;
         let countyPop = this.population[0][cases[i].county + " County"];
         let pop = -1;
         if(countyPop != undefined) {
           pop = countyPop.population;
-          county_cir.setAttribute("r",(100000*newCases/pop/2)+"");
+          county_cir.style.fill = this.getDeathColor(deaths, pop);
+          let rScale = 1000 * Math.sqrt(1.5 * newCases / pop);
+          county_cir.setAttribute("r",rScale+"");
         }
       }
     }
