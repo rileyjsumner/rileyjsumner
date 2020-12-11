@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import covidByCounty from '../../../data/interactive/covid-wi';
 import county_population from '../../../data/interactive/population-wi';
 import new_cases from '../../../data/interactive/new-cases-wi';
+import avgs from '../../../data/interactive/covid-seven-day-avg';
 
 @Component({
   selector: 'app-covid-visualization',
@@ -18,16 +19,18 @@ export class CovidVisualizationComponent implements OnInit {
   startDate: Date = new Date(2020, 1, 5);
   endDate: Date = new Date(2020, 11, 9);
   range: number;
+  sevenDayAverage: any;
 
   constructor() {
     this.covidCases = covidByCounty;
     this.population = county_population;
     this.newCases = new_cases;
-    this.dateSelected = new Date(2020, 5, 5);
+    this.dateSelected = new Date(2020, 1, 5);
     this.dateBeforeSelection = new Date(this.dateSelected.getFullYear(), this.dateSelected.getMonth(), this.dateSelected.getDate());
     this.dateBeforeSelection.setDate(this.dateBeforeSelection.getDate() - 1)
     this.range = (this.endDate.getTime() - this.startDate.getTime())/(1000*3600*24);
     this.formatLabel = this.formatLabel.bind(this);
+    this.sevenDayAverage = avgs;
   }
 
   formatLabel(value: number) {
@@ -38,7 +41,7 @@ export class CovidVisualizationComponent implements OnInit {
     this.dateSelected = new Date(start.getTime() + (1000 * 60 * 60 * 24 * value) );
     this.dateBeforeSelection = new Date(start.getTime() + (1000 * 60 * 60 * 24 * (value-1)));
 
-    this.updateMap();
+    this.updateMap(value);
     return (selected.getMonth() + 1) + "\/" + selected.getDate();
   }
   showCasesOn(date) {
@@ -54,14 +57,30 @@ export class CovidVisualizationComponent implements OnInit {
     for(let i = 0; i < cases.length; i++) {
       let county_name = cases[i].county;
       let currCases = parseInt(cases[i].cases);
-      let updateElem = this.newCases[0][county_name + " County"];
-      if(updateElem != undefined) {
-        this.newCases[0][county_name + " County"].previous_cases = currCases;
+      if(this.newCases[0][county_name + " County"] != undefined) {
+        this.newCases[0][county_name + " County"].day_one = this.newCases[0][county_name + " County"].day_two;
+        this.newCases[0][county_name + " County"].day_two = this.newCases[0][county_name + " County"].day_three;
+        this.newCases[0][county_name + " County"].day_three = this.newCases[0][county_name + " County"].day_four;
+        this.newCases[0][county_name + " County"].day_four = this.newCases[0][county_name + " County"].day_five;
+        this.newCases[0][county_name + " County"].day_five = this.newCases[0][county_name + " County"].day_six;
+        this.newCases[0][county_name + " County"].day_six = this.newCases[0][county_name + " County"].day_seven;
+        this.newCases[0][county_name + " County"].day_seven = currCases;
       }
     }
   }
+  getSevenDayAverage(county, numDays) {
+    let average = 0;
+    if(this.sevenDayAverage[numDays] != undefined) {
+      for(let i = 0; i < this.sevenDayAverage[numDays].length; i++) {
+        if(this.sevenDayAverage[numDays][i][county] != undefined) {
+          average = this.sevenDayAverage[numDays][i][county].avg;
+        }
+      }
+    }
+    return average;
+  }
 
-  updateMap() {
+  updateMap(numDays) {
     let cases = this.showCasesOn(this.dateSelected);
     this.setPreviousCases(this.showCasesOn(this.dateBeforeSelection));
 
@@ -69,31 +88,22 @@ export class CovidVisualizationComponent implements OnInit {
       let county_cir = document.getElementById(cases[i].county.replace(/ /g,"_")+"_cases");
       if(county_cir != undefined) {
         let county_name = cases[i].county;
-        let caseCount = parseInt(cases[i].cases);
-        let prevCases = this.newCases[0][county_name + " County"];
-        let prevCaseNum = 0;
-        if(prevCases != undefined) {
-          prevCaseNum = prevCases.previous_cases;
-        }
-        let newCases = caseCount - prevCaseNum;
+        let newCases = this.getSevenDayAverage(county_name, numDays);
         newCases = (newCases < 0) ? 0:newCases;
         let countyPop = this.population[0][cases[i].county + " County"];
         let pop = -1;
         if(countyPop != undefined) {
           pop = countyPop.population;
-          county_cir.setAttribute("r",(100000*newCases/pop/2.5)+"");
+          county_cir.setAttribute("r",(100000*newCases/pop/2)+"");
         }
       }
-
     }
   }
 
   ngOnInit(): void {
     let slider = document.getElementsByClassName("mat-slider-track-wrapper") as HTMLCollectionOf<HTMLElement>;
-    console.log(slider);
     slider[0].style.overflow = "visible";
-    this.updateMap();
-
+    this.updateMap(0);
   }
 
 }
