@@ -41,6 +41,7 @@ export class CovidVisualizationComponent implements OnInit {
     this.dateSelected = new Date(start.getTime() + (1000 * 60 * 60 * 24 * value) );
     this.dateBeforeSelection = new Date(start.getTime() + (1000 * 60 * 60 * 24 * (value-1)));
 
+    document.getElementById("currentDate").innerHTML = (this.dateSelected.getMonth() + 1) + "/" + this.dateSelected.getDate();
     this.updateMap(value);
     return (selected.getMonth() + 1) + "\/" + selected.getDate();
   }
@@ -121,7 +122,7 @@ export class CovidVisualizationComponent implements OnInit {
         if(countyPop != undefined) {
           pop = countyPop.population;
           county_cir.style.fill = this.getDeathColor(deaths, pop);
-          let rScale = 1000 * Math.sqrt(1.5 * newCases / pop);
+          let rScale = 1000 * Math.sqrt(2 * newCases / pop);
           county_cir.setAttribute("r",rScale+"");
         }
       }
@@ -129,6 +130,10 @@ export class CovidVisualizationComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    let nav = document.getElementsByClassName("nav") as HTMLCollectionOf<HTMLElement>;
+    let intro = document.getElementsByClassName("intro") as HTMLCollectionOf<HTMLElement>;
+    nav[0].style.display = "none";
+    intro[0].style.display = "none";
     let slider = document.getElementsByClassName("mat-slider-track-wrapper") as HTMLCollectionOf<HTMLElement>;
     slider[0].style.overflow = "visible";
     this.updateMap(0);
