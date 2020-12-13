@@ -2,7 +2,7 @@
   width: 500px;
   overflow: visible !important;
 }
-h3 {
+h3, h4 {
   width: 100%;
 }
 circle {
@@ -150,5 +150,162 @@ path {
   }
   .wi-county-map {
     width: 400px;
+  }
+  .cases-50 {
+    min-width: 112px;
+    min-height: 112px;
+    max-width: 112px;
+    max-height: 112px;
+  }
+  .cases-40 {
+    min-width: 90px;
+    min-height: 90px;
+    max-width: 90px;
+    max-height: 90px;
+  }
+  .cases-30 {
+    min-width: 67px;
+    min-height: 67px;
+    max-width: 67px;
+    max-height: 67px;
+  }
+  .cases-20 {
+    min-width: 45px;
+    min-height: 45px;
+    max-width: 45px;
+    max-height: 45px;
+  }
+  .cases-10 {
+    min-width: 22px;
+    min-height: 22px;
+    max-width: 22px;
+    max-height: 22px;
+  }
+  .cases-5 {
+    min-width: 11px;
+    min-height: 11px;
+    max-width: 11px;
+    max-height: 11px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .data-vis-content {
+    flex-wrap: wrap;
+  }
+  .cases-legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .data-vis-content .legend.deaths-legend {
+    justify-content: space-around;
+  }
+  .cases-item {
+    width: 30%;
+    flex-wrap: wrap;
+  }
+  .death-item {
+    width: 10%;
+  }
+  h5, .cases {
+    width: 100%;
+    margin: 0;
+  }
+  .data-vis-content .legend.cases-legend,
+  .data-vis-content .legend.deaths-legend,
+  .data-vis-content .map-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wi-county-map {
+    width: 320px;
+  }
+  .death-item {
+    width: 25%;
+  }
+  .cases-item h5 {
+    width: 100%;
+  }
+  .death-item h5 {
+    width: 40%;
+  }
+  .cases-50 {
+    min-width: 90px;
+    min-height: 90px;
+    max-width: 90px;
+    max-height: 90px;
+  }
+  .cases-40 {
+    min-width: 72px;
+    min-height: 72px;
+    max-width: 72px;
+    max-height: 72px;
+  }
+  .cases-30 {
+    min-width: 54px;
+    min-height: 54px;
+    max-width: 54px;
+    max-height: 54px;
+  }
+  .cases-20 {
+    min-width: 36px;
+    min-height: 36px;
+    max-width: 36px;
+    max-height: 36px;
+  }
+  .cases-10 {
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+  }
+  .cases-5 {
+    min-width: 9px;
+    min-height: 9px;
+    max-width: 9px;
+    max-height: 9px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .wi-county-map {
+    width: 280px;
+  }
+  .cases-50 {
+    min-width: 79px;
+    min-height: 79px;
+    max-width: 79px;
+    max-height: 79px;
+  }
+  .cases-40 {
+    min-width: 63px;
+    min-height: 63px;
+    max-width: 63px;
+    max-height: 63px;
+  }
+  .cases-30 {
+    min-width: 47px;
+    min-height: 47px;
+    max-width: 47px;
+    max-height: 47px;
+  }
+  .cases-20 {
+    min-width: 31px;
+    min-height: 31px;
+    max-width: 31px;
+    max-height: 31px;
+  }
+  .cases-10 {
+    min-width: 16px;
+    min-height: 16px;
+    max-width: 16px;
+    max-height: 16px;
+  }
+  .cases-5 {
+    min-width: 8px;
+    min-height: 8px;
+    max-width: 8px;
+    max-height: 8px;
   }
 }
