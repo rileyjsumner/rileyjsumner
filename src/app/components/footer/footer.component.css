@@ -32,6 +32,13 @@
 .footer-item a fa-icon:hover {
   color: #0a8483;
 }
+.footer-copyright {
+  width: 100%;
+  text-align: center;
+}
+.footer-copyright p {
+  color: #effeff;
+}
 
 @media(min-width: 600px) {
   .footer-item a fa-icon {
