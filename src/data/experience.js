@@ -30,7 +30,7 @@ let experience = [
     start: 'September 2018',
     end: 'Present',
     desc: 'Successfully drove the development of online platforms used by staff, jobseekers and students to aid day-to-day operations.',
-    lang: ['PHP', 'JavaScript', 'VueJS', 'HTML', 'SCSS', 'jQuery', 'WordPress'],
+    lang: ['PHP', 'JavaScript', 'VueJS', 'Docker', 'HTML', 'SCSS', 'jQuery', 'WordPress'],
     url: 'https://hr.wisc.edu',
     timestamp: '2018-09-01',
     slug: 'ohr',

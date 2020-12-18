@@ -155,6 +155,11 @@ let skills = [
     name: 'Cyberduck',
     level: 5,
     type: 'tech'
+  },
+  {
+    name: 'Docker',
+    level: 3,
+    type: 'tech'
   }
 ];
 
