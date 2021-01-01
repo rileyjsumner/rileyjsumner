@@ -23,6 +23,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { CardViewComponent } from './components/card-view/card-view.component';
 import { CovidVisualizationComponent } from './components/covid-visualization/covid-visualization.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { ThanosLeagueComponent } from './interactives/thanos-league/thanos-league.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     TagComponent,
     CardComponent,
     CardViewComponent,
-    CovidVisualizationComponent
+    CovidVisualizationComponent,
+    ThanosLeagueComponent
   ],
   imports: [
     BrowserModule,

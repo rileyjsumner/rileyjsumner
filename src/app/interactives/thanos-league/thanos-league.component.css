@@ -1,0 +1,72 @@
+.thanos-wrapper {
+  padding-bottom: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.team-entry {
+  display: flex;
+  width: 70%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.team-details {
+  width: 40%;
+}
+.team-scoring {
+  width: 55%;
+}
+
+.gauntlet-svg {
+  width: 250px;
+}
+
+svg.gauntlet-svg path.Power,
+svg.gauntlet-svg path.Space,
+svg.gauntlet-svg path.Reality,
+svg.gauntlet-svg path.Soul,
+svg.gauntlet-svg path.Time,
+svg.gauntlet-svg path.Mind {
+  fill: #121212;
+}
+
+svg.gauntlet-svg path.Power.is-active {
+  fill: #93278f;
+}
+
+svg.gauntlet-svg path.Space.is-active {
+  fill: #0071bc;
+}
+
+svg.gauntlet-svg path.Reality.is-active {
+  fill: #c1272d;
+}
+
+svg.gauntlet-svg path.Soul.is-active {
+  fill: #f15a24;
+}
+
+svg.gauntlet-svg path.Time.is-active {
+  fill: #009245;
+}
+
+svg.gauntlet-svg path.Mind.is-active {
+  fill: #fbb03b;
+}
+
+svg.gauntlet-svg path.Power.is-used,
+svg.gauntlet-svg path.Space.is-used,
+svg.gauntlet-svg path.Reality.is-used,
+svg.gauntlet-svg path.Soul.is-used,
+svg.gauntlet-svg path.Time.is-used,
+svg.gauntlet-svg path.Mind.is-used {
+  stroke: #8b0000;
+  stroke-width: 5px;
+}
+
+@media (max-width: 700px) {
+  .team-entry {
+    width: 100%;
+  }
+}
