@@ -72,6 +72,16 @@ let skills = [
     type: 'lang',
   },
   {
+    name: 'MATLAB',
+    level: 3,
+    type: 'lang',
+  },
+  {
+    name: 'R',
+    level: 4,
+    type: 'lang',
+  },
+  {
     name: 'Python',
     level: 3,
     type: 'lang',
@@ -103,6 +113,11 @@ let skills = [
   },
   {
     name: 'MongoDB',
+    level: 4,
+    type: 'tech',
+  },
+  {
+    name: 'Docker',
     level: 4,
     type: 'tech',
   },
@@ -154,11 +169,6 @@ let skills = [
   {
     name: 'Cyberduck',
     level: 5,
-    type: 'tech'
-  },
-  {
-    name: 'Docker',
-    level: 3,
     type: 'tech'
   }
 ];

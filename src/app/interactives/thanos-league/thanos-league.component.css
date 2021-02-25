@@ -65,8 +65,46 @@ svg.gauntlet-svg path.Mind.is-used {
   stroke-width: 5px;
 }
 
+.stone {
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 50%;
+}
+
+.power-stone {
+  background-color: #93278f;
+}
+.space-stone {
+  background-color: #0071bc;
+}
+.reality-stone {
+  background-color: #c1272d;
+}
+.soul-stone {
+  background-color: #f15a24;
+}
+.time-stone {
+  background-color: #009245;
+}
+.mind-stone {
+  background-color: #fbb03b;
+}
+
+.thanos-details {
+  width: 70%;
+}
+
+.stones-explained {
+  padding: 12px;
+}
+.avatar {
+  max-width: 75px;
+  height: auto;
+}
+
 @media (max-width: 700px) {
-  .team-entry {
+  .team-entry,
+  .thanos-details {
     width: 100%;
   }
 }

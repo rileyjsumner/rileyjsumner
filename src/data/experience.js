@@ -28,7 +28,7 @@ let experience = [
     affiliation: 'UW-Madison Office of Human Resources',
     location: 'Madison, WI',
     start: 'September 2018',
-    end: 'Present',
+    end: 'March 2020',
     desc: 'Successfully drove the development of online platforms used by staff, jobseekers and students to aid day-to-day operations.',
     lang: ['PHP', 'JavaScript', 'VueJS', 'Docker', 'HTML', 'SCSS', 'jQuery', 'WordPress'],
     url: 'https://hr.wisc.edu',

@@ -1,5 +1,12 @@
 let writing = [
   {
+    title: 'Four years of Trump: Should we be surprised how it ended?',
+    byline: 'Riley Sumner and Ian-Michael Griffin',
+    summary: 'The last four years have inflicted carnage on American democracy. The Trump administration’s shattering of presidential norms, attacks on the free press and insistence on unwavering loyalty has ultimately led us to what has been dubbed the most divisive era in American history.',
+    url: 'https://www.dailycardinal.com/article/2021/01/four-years-of-trump',
+    thumbnail: ''
+  },
+  {
     title: 'Counting votes is not “stealing the election” — it is an election',
     byline: 'Haley Bills, Riley Sumner and Samantha Telson',
     summary: 'Though the 2020 presidential election election remains too close to call, Trump has continued to sow division and spread disinformation, as he took to Twitter in a now removed tweet alleging Democrats are trying to “steal the election.”',

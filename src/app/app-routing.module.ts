@@ -11,6 +11,7 @@ import {TagsComponent} from "./views/tags/tags.component";
 import {CardViewComponent} from "./components/card-view/card-view.component";
 import {CovidVisualizationComponent} from "./components/covid-visualization/covid-visualization.component";
 import {ThanosLeagueComponent} from "./interactives/thanos-league/thanos-league.component";
+import {ThanosAdminComponent} from "./interactives/thanos-admin/thanos-admin.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'Tags/:tag', component: TagsComponent },
   { path: 'Interactive/covid-wi-visualization', component: CovidVisualizationComponent },
   { path: 'Interactive/thanos', component: ThanosLeagueComponent },
+  { path: 'Interactive/thanos/admin', component: ThanosAdminComponent },
   { path: '404', component: NotfoundComponent },
   { path: '**', redirectTo: '/404' },
 ];

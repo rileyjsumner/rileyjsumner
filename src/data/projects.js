@@ -30,11 +30,23 @@ let projects = [
     start: 'June 2019',
     end: 'Present',
     desc: 'Created the new web home for Bell Magazine which takes story data entered from a CRUD admin panel and displays to users.',
-    lang: ['VueJS', 'JavaScript', 'MongoDB', 'HTML', 'CSS'],
+    lang: ['VueJS', 'JavaScript', 'MongoDB', 'Docker', 'HTML', 'CSS'],
     location: 'Madison, WI',
     url: 'https://github.com/rileyjsumner/Bell-Magazine',
     timestamp: '2019-06-01',
     slug: 'bell-magazine-website',
+    type: 'Projects'
+  },
+  {
+    title: 'COVID-19 In Wisconsin Visualization',
+    affiliation: 'Class Project, UW-Madison',
+    start: 'November 2020',
+    end: 'December 2020',
+    desc: 'Created a visualization which demonstrated the cases of COVID-19 infections in Wisconsin.',
+    lang: ['Angular', 'JavaScript', 'CSS'],
+    url: 'https://rileysumner.com/Interactive/covid-wi-visualization',
+    timestamp: '2020-11-01',
+    slug: 'covid-wi-visualization',
     type: 'Projects'
   },
   {

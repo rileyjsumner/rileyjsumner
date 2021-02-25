@@ -24,6 +24,7 @@ import { CardViewComponent } from './components/card-view/card-view.component';
 import { CovidVisualizationComponent } from './components/covid-visualization/covid-visualization.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ThanosLeagueComponent } from './interactives/thanos-league/thanos-league.component';
+import { ThanosAdminComponent } from './interactives/thanos-admin/thanos-admin.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ThanosLeagueComponent } from './interactives/thanos-league/thanos-leagu
     CardComponent,
     CardViewComponent,
     CovidVisualizationComponent,
-    ThanosLeagueComponent
+    ThanosLeagueComponent,
+    ThanosAdminComponent
   ],
   imports: [
     BrowserModule,
