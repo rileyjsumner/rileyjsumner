@@ -1,3 +1,14 @@
 export const Header = () => {
-  return <h1>Header</h1>;
+  /**
+   * Header
+   *
+   * TODO:
+   * * Should this be anything? What?
+   */
+  return (
+    <header>
+      <h1>My name is Riley</h1>
+      <p>Toggle Theme</p>
+    </header>
+  );
 };

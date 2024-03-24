@@ -2,11 +2,20 @@ import { Footer, Header, Nav } from ".";
 import { Outlet } from "react-router";
 
 export const Layout = () => {
+  /**
+   * Layout
+   *
+   * TODO:
+   * * Styles
+   * * Add Bootstrap
+   */
   return (
     <>
-      <Header />
       <Nav />
-      <Outlet />
+      <Header />
+      <main>
+        <Outlet />
+      </main>
       <Footer />
     </>
   );
