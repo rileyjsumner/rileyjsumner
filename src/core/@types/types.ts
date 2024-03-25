@@ -1,21 +1,26 @@
 export enum Company {
-  spsCommerce = "spsCommerce",
-  uDisc = "uDisc",
+  spsCommerce = "SPS Commerce",
+  uDisc = "UDisc",
+  dailyCardinal = "The Daily Cardinal",
+  ohr = "UW Madison Office of Human Resources",
+  bare = "JP Ecommerce Inc",
 }
 
 export enum SkillType {
   language = "language",
   software = "software",
+  concept = "concept",
 }
 
 export interface ResumeDate {
-  sMo: string;
-  sY: string;
-  eMo: string | null;
-  eY: string | null;
+  sMo: number;
+  sY: number;
+  eMo: number | null;
+  eY: number | null;
 }
 
 export interface Skill {
+  tag: string;
   skillName: string;
   level: number;
   type: SkillType;
@@ -27,4 +32,5 @@ export interface Experience {
   dateRange: ResumeDate;
   content: Array<string>;
   skills: Array<Skill>;
+  link: string;
 }

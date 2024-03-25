@@ -2,7 +2,47 @@
   text-align: left;
 }
 
+nav {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #198754;
+}
+
+main {
+  padding-top: 4.5rem;
+}
+
+footer {
+  background-color: #198754;
+  color: white;
+}
 .skill {
-  background-color: blueviolet;
-  width: 100px;
+  background-color: #198754;
+  border-radius: 0.75rem;
+}
+
+.skill a {
+  color: white;
+  font-weight: bold;
+}
+
+.experience:nth-child(even) {
+  background-color: #e6e6e6;
+}
+
+.skill-level-bar {
+  height: 100%;
+  min-width: 5rem;
+  min-height: 2rem;
+  vertical-align: center;
+  background-color: #09034b;
+}
+
+.skill-level-bar-wrap div:first-child {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.skill-level-bar-wrap div:last-child {
+  border-radius: 0 0.5rem 0.5rem 0;
 }

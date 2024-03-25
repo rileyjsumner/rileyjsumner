@@ -1,4 +1,5 @@
-import { Footer, Header, Nav } from ".";
+import Container from "react-bootstrap/Container";
+import { Footer, Navigation } from ".";
 import { Outlet } from "react-router";
 
 export const Layout = () => {
@@ -11,10 +12,11 @@ export const Layout = () => {
    */
   return (
     <>
-      <Nav />
-      <Header />
+      <Navigation />
       <main>
-        <Outlet />
+        <Container>
+          <Outlet />
+        </Container>
       </main>
       <Footer />
     </>
