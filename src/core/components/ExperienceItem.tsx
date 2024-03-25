@@ -5,7 +5,10 @@ import { SkillTag } from "./SkillTag";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 
-export const ExperienceItem = (props: { experience: Experience }) => {
+export const ExperienceItem = (props: {
+  experience: Experience;
+  isProject?: boolean;
+}) => {
   const { experience } = props;
   const { dateRange } = experience;
   const sDate = new Date(dateRange.sY, dateRange.sMo - 1, 1);
@@ -41,20 +44,26 @@ export const ExperienceItem = (props: { experience: Experience }) => {
           </Col>
           <Col md="3">
             <h4>
-              <a href={props.experience.link}>{props.experience.company}</a>
+              <a href={experience.link} target="_blank" rel="noreferrer">
+                {experience.company}
+              </a>
             </h4>
             <p>
               {sDate.toLocaleDateString("default", {
                 month: "long",
                 year: "numeric",
-              })}{" "}
-              —{" "}
-              {eDate
-                ? eDate.toLocaleDateString("default", {
-                    month: "long",
-                    year: "numeric",
-                  })
-                : "Present"}
+              })}
+              {!experience.isProject && (
+                <>
+                  —
+                  {eDate
+                    ? eDate.toLocaleDateString("default", {
+                        month: "long",
+                        year: "numeric",
+                      })
+                    : "Present"}{" "}
+                </>
+              )}
             </p>
           </Col>
         </Row>

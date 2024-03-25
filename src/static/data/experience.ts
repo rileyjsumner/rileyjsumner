@@ -29,6 +29,7 @@ const getExperience = (
     (tag) => skills.find((skill) => skill.tag === tag) ?? ({} as any)
   ),
   link,
+  isProject: false,
 });
 
 export const experience: Array<Experience> = [

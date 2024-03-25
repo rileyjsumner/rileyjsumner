@@ -4,6 +4,7 @@ export enum Company {
   dailyCardinal = "The Daily Cardinal",
   ohr = "UW Madison Office of Human Resources",
   bare = "JP Ecommerce Inc",
+  personal = "Personal Project",
 }
 
 export enum SkillType {
@@ -33,4 +34,5 @@ export interface Experience {
   content: Array<string>;
   skills: Array<Skill>;
   link: string;
+  isProject: boolean;
 }

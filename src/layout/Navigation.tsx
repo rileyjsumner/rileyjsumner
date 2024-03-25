@@ -10,7 +10,7 @@ export const Navigation = () => {
    * * Styling
    */
 
-  const links = ["home", "experience", "skills"];
+  const links = ["home", "experience", "projects", "skills"];
   return (
     <nav>
       <Container>

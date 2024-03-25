@@ -5,15 +5,6 @@ import Button from "react-bootstrap/Button";
 import Me from "src/static/images/me.png";
 
 export const Home = () => {
-  /**
-   * Home
-   *
-   * TODO
-   * * Intro/About Me
-   * * Click to Download Resume
-   * * Education?
-   */
-
   return (
     <>
       <Row className="p-2">
@@ -36,7 +27,12 @@ export const Home = () => {
           </Row>
           <Row>
             <Col md="12" className="text-center p-5">
-              <Button variant="outline-success" href={Resume}>
+              <Button
+                variant="outline-success"
+                href={Resume}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Download My Resume
               </Button>
             </Col>
