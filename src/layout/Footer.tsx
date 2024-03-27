@@ -36,7 +36,7 @@ export const Footer = () => {
     <footer className="p-4">
       <Container className="d-flex justify-content-center">
         {footerLinks.map((link) => (
-          <a href={link.url} className="mx-5">
+          <a href={link.url} className="mx-5" target="_blank" rel="noreferrer">
             <img
               src={link.photo}
               alt={`${link.name}; source: ${link.imgSource}`}
