@@ -238,3 +238,114 @@ export interface Player {
   height: string;
   weight: string;
 }
+
+export interface DraftSettings {
+  teams: 12;
+  slots_wr: 1;
+  slots_te: 1;
+  slots_super_flex: 1;
+  slots_rb: 1;
+  slots_qb: 1;
+  slots_flex: 6;
+  slots_bn: 19;
+  rounds: 4;
+  reversal_round: 0;
+  player_type: 0;
+  pick_timer: 28800;
+  nomination_timer: 60;
+  enforce_position_limits: 1;
+  cpu_autopick: 1;
+  autostart: 1;
+  autopause_start_time: 360;
+  autopause_end_time: 720;
+  autopause_enabled: 1;
+  alpha_sort: 0;
+}
+
+export interface DraftMetadata {
+  scoring_type: "dynasty_2qb";
+  name: string;
+  description: string;
+}
+export interface Draft {
+  type: "linear" | "snake";
+  status: "pre_draft" | "drafting" | "in_season";
+  start_time: number;
+  sport: "nfl";
+  settings: DraftSettings;
+  season_type: "regular";
+  season: string;
+  metadata: DraftMetadata;
+  league_id: string;
+  last_picked: string | null;
+  last_message_time: number;
+  last_message_id: string;
+  draft_order: { [userId: string]: number };
+  draft_id: string;
+  creators: Array<string>;
+  created: number;
+}
+
+export interface DraftPickMetadata {
+  years_exp: "0";
+  team: "ATL";
+  status: "Active";
+  sport: "nfl";
+  position: "RB";
+  player_id: "9509";
+  number: "7";
+  news_updated: "1686777314000";
+  last_name: "Robinson";
+  injury_status: "";
+  first_name: "Bijan";
+}
+export interface DraftPick {
+  round: number;
+  roster_id: number;
+  player_id: string;
+  picked_by: string;
+  pick_no: number;
+  metadata: string;
+  is_keeper: boolean | null;
+  draft_slot: number;
+  draft_id: string;
+}
+
+export interface IPlayoffMatchup {
+  t2: number; // team one
+  t1: number; // team two
+  w: number; // winner to
+  l: number; // loser to
+  r: number; // round
+  m: number; // match id
+  t1_from?: {
+    w?: number;
+    l?: number;
+  };
+  t2_from?: {
+    w?: number;
+    l?: number;
+  };
+}
+
+export type PlayoffMatchup = Omit<IPlayoffMatchup, "t1" | "t2"> & {
+  t1: User;
+  t2: User;
+};
+
+export interface UserMetadata {
+  team_name: string;
+  mention_pn: "on" | "off";
+  avatar: string;
+  archived: "on" | "off";
+  allow_pn: "on" | "off";
+}
+export interface User {
+  user_id: string;
+  settings: null;
+  metadata: UserMetadata;
+  is_owner: boolean | null;
+  is_bot: boolean;
+  display_name: string;
+  avatar: string;
+}

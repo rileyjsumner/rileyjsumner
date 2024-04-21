@@ -2,18 +2,19 @@ import { useEffect, useState } from "react";
 import { Col } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import { Player, Roster } from "src/core/@types/types";
+import { useSleeperContext } from "src/core/context/SleeperContext";
 import { useGetLeagueRosters, useGetLeaguesForUser } from "src/core/hooks";
 import rawPlayerList from "src/static/data/sleeper-player-dump.json";
 
-export const AllMyRosters = () => {
+export const Rosters = () => {
   const [leagueIds, setLeagueIds] = useState<Array<string>>([]);
   const [myRosters, setMyRosters] = useState<Array<Roster>>([]);
   const [playerList] = useState<{ [key: string]: Player }>(
     rawPlayerList as any
   );
-  const userId = "647228179060174848"; // TODO Context
 
-  const { data: leagues } = useGetLeaguesForUser(userId);
+  const { userId } = useSleeperContext();
+  const { data: leagues } = useGetLeaguesForUser(userId, "2024");
   const { data: rosters, refetch } = useGetLeagueRosters(leagueIds);
 
   useEffect(() => {
@@ -30,7 +31,7 @@ export const AllMyRosters = () => {
       []
     );
     setMyRosters(filteredRosters ?? []);
-  }, [rosters]);
+  }, [rosters, userId]);
 
   const renderPlayer = (playerId: string) => {
     const player = playerList[playerId];

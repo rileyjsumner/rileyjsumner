@@ -1,5 +1,7 @@
 import { Nav } from "react-bootstrap";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
+import { LeagueSelect } from "./components";
+import { SleeperProvider } from "src/core/context/SleeperContext";
 
 export const Sleeper = () => {
   const tabs = ["rosters", "playoffs", "drafts", "download"];
@@ -18,15 +20,18 @@ export const Sleeper = () => {
    */
   return (
     <>
-      <h1>Sleeper Viewer</h1>
-      <Nav variant="tabs">
-        {tabs.map((tab) => (
-          <Nav.Link key={tab} href={`/sleeper/${tab}`}>
-            {tab}
-          </Nav.Link>
-        ))}
-      </Nav>
-      <Outlet />
+      <SleeperProvider>
+        <h1>Sleeper Viewer</h1>
+        <Nav variant="tabs">
+          {tabs.map((tab) => (
+            <Nav.Link key={tab}>
+              <Link to={`/sleeper/${tab}`}>{tab}</Link>
+            </Nav.Link>
+          ))}
+        </Nav>
+        <LeagueSelect />
+        <Outlet />
+      </SleeperProvider>
     </>
   );
 };

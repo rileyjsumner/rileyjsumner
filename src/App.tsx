@@ -6,9 +6,10 @@ import { ExperienceBySkill } from "./views/ExperienceBySkill";
 import { Sleeper } from "./features";
 import { QueryClient, QueryClientProvider } from "react-query";
 import {
-  AllMyRosters,
+  Rosters,
   DownloadPlayerData,
   DraftPage,
+  Playoffs,
 } from "./features/sleeper/views";
 
 function App() {
@@ -24,9 +25,10 @@ function App() {
             <Route path="experience" element={<Experience />} />
             <Route path="projects" element={<Projects />} />
             <Route path="sleeper" element={<Sleeper />}>
-              <Route path="rosters" element={<AllMyRosters />} />
+              <Route path="rosters" element={<Rosters />} />
               <Route path="download" element={<DownloadPlayerData />} />
               <Route path="drafts" element={<DraftPage />} />
+              <Route path="playoffs" element={<Playoffs />} />
             </Route>
 
             <Route path="*" element={<Home />} />
